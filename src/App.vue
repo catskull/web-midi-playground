@@ -77,9 +77,6 @@ export default {
         console.log('WebMidi not enabled', err)
       } else {
         this.outputDevice = WebMidi.outputs[0]
-        this.outputDevice.sendStart()
-        this.outputDevice.playNote(64, 1)
-        this.outputDevice.sendClock()
       }
     }, 'enable sysex')
   }
