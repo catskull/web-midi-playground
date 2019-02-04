@@ -56,7 +56,7 @@ export default {
     startMidiCLock () {
       this.clockInterval = setInterval(() => {
         this.sendMidiClock()
-      }, this.bpmInMilliseconds)
+      }, this.bpmInMilliseconds / 24)
     },
     stopMidiClock () {
       clearInterval(this.clockInterval)
