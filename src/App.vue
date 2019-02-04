@@ -48,7 +48,6 @@ export default {
   },
   computed: {
     bpmInMilliseconds () {
-      console.log(parseInt(this.clockTempo))
       return 60000 / parseInt(this.clockTempo)
     }
   },
