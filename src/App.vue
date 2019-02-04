@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h3>Web MIDI Playground</h3>
+    <p>Connected to: {{ outputDevice.name }}</p>
     <template v-if="!clockInterval">
       <input v-model="clockTempo" type="number" placeholder="BPM"/>
       <button
