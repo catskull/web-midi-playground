@@ -53,6 +53,7 @@ export default {
   },
   methods: {
     startMidiCLock () {
+      this.outputDevice.sendStart()
       this.clockInterval = setInterval(() => {
         this.sendMidiClock()
       }, this.bpmInMilliseconds / 24)
