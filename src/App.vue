@@ -59,6 +59,7 @@ export default {
       }, this.bpmInMilliseconds / 24)
     },
     stopMidiClock () {
+      this.outputDevice.sendStop()
       clearInterval(this.clockInterval)
       this.clockInterval = undefined
     },
